@@ -241,7 +241,7 @@ input:focus{outline:none;border-color:var(--on-amarelo)}
 .ap-badge{display:inline-flex;align-items:center;gap:10px;background:var(--card);border-radius:999px;padding:7px 16px 7px 7px;font-weight:700}
 .ap-badge i{width:28px;height:28px;border-radius:50%;background:var(--ok);display:grid;place-items:center}
 .ap-badge i::before{content:"";width:14px;height:14px;background:var(--on-amarelo);clip-path:polygon(14% 52%,26% 40%,42% 56%,76% 18%,88% 30%,42% 80%)}
-.ap-top h1{font-size:clamp(2.4rem,7vw,4rem);font-weight:900;line-height:.98}
+.ap-top .ap-h{font-size:clamp(2.4rem,7vw,4rem);font-weight:900;line-height:.98;text-transform:none;letter-spacing:-.025em}
 .ap-top .sub{color:var(--muted);font-size:1.12rem;max-width:40ch}
 .ap-model{font:600 .9rem var(--f-mono);background:var(--card);border-radius:10px;padding:8px 12px}
 .ap-cta{display:grid;gap:10px;width:100%;max-width:420px}
@@ -319,7 +319,7 @@ footer .wrap{padding-block:40px 28px;display:grid;gap:22px}
   <div class="wrap">
     <section class="ap-top" aria-labelledby="apTitle">
       <span class="ap-badge"><i></i>Pré-análise aprovada</span>
-      <h1 id="apTitle">Seu cadastro foi <span class="hl">pré-aprovado.</span></h1>
+      <h2 id="apTitle" class="ap-h">Seu cadastro foi <span class="hl">pré-aprovado.</span></h2>
       <p class="sub">Agora é só vir na loja com seu documento e sair com o celular na mão.</p>
       <span class="ap-model" id="apModel" hidden></span>
       <div class="ap-cta">
